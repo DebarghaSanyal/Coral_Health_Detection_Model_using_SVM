@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coral Health Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Coral Health Checker</h1>
+    </header>
+    <div class="container">
+        <nav class="left-panel">
+            <input type="file" id="coralImage" accept="image/*">
+            <button onclick="checkCoral()">Analyze</button>
+            <div id="result" class="output-box"></div>
+        </nav>
+        <section class="main-panel">
+            <div id="uploadedImage" class="image-preview"></div>
+            <div id="pieChart" class="chart-container"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
